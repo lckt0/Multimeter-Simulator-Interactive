@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" id="fullscreen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Interactive Multimeter</title>
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="d-flex flex-column">
+            <h1 class="text align-self-center p-2">Interactive Multimeter</h1>
+            <div class="row align-self-center p-2">
+                <div id="multimeter_container" class="p-4 m-2">
+                    <div id="multimeter_valuetype">OHM</div>
+                    <div id="multimeter_valuebox">0</div>
+
+                    <br><br><br>
+                    <center>
+                        <div id="multimeter_circle" onclick="hesapla2();"></div>
+                    </center>
+                    <div id="probs">
+                        <div id="prob1"></div>
+                        <div id="spaceprob"></div>
+                        <div id="prob2"></div>
+                        <div id="spaceprob"></div>
+                        <div id="prob3"></div>
+                    </div>
+                </div>
+                <div id="multimeter_options" class="p-4 m-2">
+                    <table>
+                        <tr>
+                           <td>1ˢᵗ Band</td>
+                            <td>
+                                <label>
+                                    <select class="katsayi" id="renk1">
+                                        <option value="0">BLACK</option>
+                                        <option value="1">BROWN</option>
+                                        <option value="2">RED</option>
+                                        <option value="3">ORANGE</option>
+                                        <option value="4">YELLOW</option>
+                                        <option value="5">GREEN</option>
+                                        <option value="6">BLUE</option>
+                                        <option value="7">PURPLE</option>
+                                        <option value="8">GRAY</option>
+                                        <option value="9">WHITE</option>
+                                    </select>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>2ⁿᵈ Band</td>
+                           <td>
+                                <label>
+                                    <select class="katsayi" id="renk2">
+                                        <option value="0">BLACK</option>
+                                        <option value="1">BROWN</option>
+                                        <option value="2">RED</option>
+                                        <option value="3">ORANGE</option>
+                                        <option value="4">YELLOW</option>
+                                        <option value="5">GREEN</option>
+                                        <option value="6">BLUE</option>
+                                        <option value="7">PURPLE</option>
+                                        <option value="8">GRAY</option>
+                                        <option value="9">WHITE</option>
+                                    </select>
+                                </label>
+                           </td>
+                        </tr>
+                        <tr>
+                            <td>3ʳᵈ Band</td>
+                            <td>
+                                <label>
+                                    <select class="katsayi" id="renk3">
+                                        <option value="0">BLACK</option>
+                                        <option value="1">BROWN</option>
+                                        <option value="2">RED</option>
+                                        <option value="3">ORANGE</option>
+                                        <option value="4">YELLOW</option>
+                                        <option value="5">GREEN</option>
+                                        <option value="6">BLUE</option>
+                                        <option value="7">PURPLE</option>
+                                        <option value="8">GRAY</option>
+                                        <option value="9">WHITE</option>
+                                    </select>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4ᵗʰ Band</td>
+                            <td>
+                                <label>
+                                    <select id="renk4">
+                                        <option value="1">BROWN</option>
+                                        <option value="2">RED</option>
+                                        <option value="5">GOLD</option>
+                                        <option value="10">SILVER</option>
+                                        <option value="20">TRANSPARENT</option>
+                                    </select>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td>
+                                <label>
+                                    <select id="birim">
+                                        <option value="1">OHM</option>
+                                        <option value="1000">kOHM</option>
+                                    </select>
+                                </label>
+                            </td>
+                        </tr>
+                     </table>    
+
+                </div>
+            </div>
+            <br>
+            <span id="credits" class="text align-self-left p-2">
+            </span>
+            <span id="fkFS" class="text align-self-left p-2">
+                <span id="full-screen-btn" style="background-color: khaki;position: fixed;bottom: 0;margin-bottom: 61.3px;margin-left: 275px;" onclick="tamEkran();" class="text align-self-right p-2">
+                </span>
+            </span>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

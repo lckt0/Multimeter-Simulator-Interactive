@@ -1,0 +1,151 @@
+body,html {
+    height: 100vh;
+}
+
+#multimeter_container {
+    width: 300px;
+    height: 500px;
+    background-color: #cda500;
+    border: 2px #333 dashed;
+    border-radius: 10px;
+}
+
+#multimeter_options {
+    width: 300px;
+    height: 500px;
+    background-color: lightskyblue;
+    border: 2px #333 dashed;
+    border-radius: 10px;
+}
+
+#credits {
+    text-align: center;
+    border: 2px #333 dashed;
+    border-radius: 10px;
+    background-color: khaki;
+    width: 625px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+#credits:before{
+    content:'Coded by LockT#2434';
+    color: black;
+    animation: yazi infinite 8s;
+}
+
+@keyframes yazi{
+    5%  {content:'Coded by LockT#2434';}
+    5%  {opacity: 1;}
+    25% {opacity: 0;}
+    55% {content:'github.com/lckt0';}
+    55% {opacity: 1;}
+    75% {opacity: 0;}
+}
+
+@font-face {
+    font-family: 'multimeter_font';
+    src: url('multimeter_font.ttf') format('truetype');
+}
+
+#multimeter_valuebox {
+    font-family: multimeter_font;
+    font-size: 80px;
+    background-color: #787862;
+    height: 90px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 90px;
+    border-radius: 10px;
+    color: #3f3f3f;
+    border: 2px #333 solid;
+}
+
+#multimeter_valuetype {
+    font-family: multimeter_font;
+    font-size: 20px;
+    height: 0px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0px;
+    line-height: 30px;
+    border-radius: 10px;
+    color: #3f3f3f;
+}
+
+#multimeter_circle {
+    background-color: #ffd881;
+    border: 2px #333 solid;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+
+#btn_calc {
+    width: 150px;
+    height: 45px;
+}
+
+#fkFS {
+    background-color: transparent;
+    text-align: center;
+    width: 625px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+#full-screen-btn {
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-block;
+    border: .1em solid currentColor;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    font-size: 20px;
+}
+#full-screen-btn:before, #full-screen-btn:after {
+    content: '';
+    background: khaki;
+    position: absolute;
+}
+#full-screen-btn:before {
+    width: .333em;
+    height: 1em;
+    left: .233em;
+    top: -.1em;
+}
+#full-screen-btn:after {
+    width: 1em;
+    height: .333em;
+    top: .233em;
+    left: -.1em;
+}
+
+#renk1, #renk2, #renk3, #renk4, #katsayi, #birim {
+    width: 160px;
+    margin-left: 20px;
+    background-color: lightblue;
+}
+
+#probs {
+    height: 30px;
+    width: 100%;
+    margin-top: 75px;
+    vertical-align: middle;
+}
+
+#prob1,#prob2,#prob3{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    border: 5px #333 double;
+    float: left;
+}
+
+#spaceprob {
+    width: 78.6px;
+    height: 10px;
+    float: left;
+}
